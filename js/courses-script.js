@@ -2,16 +2,10 @@ const loader = document.getElementById("loader");
 const nav = document.querySelector("nav");
 const navText = document.querySelectorAll("nav ul li a");
 const navUl = document.getElementById("ul");
-const boxes = document.querySelectorAll(".box");
-const bTexts = document.querySelectorAll(".box-text");
-const refs = document.querySelectorAll(".ref");
-const left_btn = document.querySelector(".left-btn");
-const right_btn = document.querySelector(".right-btn");
-var pos = 0;
 
 setTimeout(() => {
   loader.style.display = "none";
-}, 2000);
+}, 1500);
 
 if (screen.width <= 1400) {
   document.querySelector("body").innerHTML =
@@ -40,37 +34,4 @@ window.addEventListener("scroll", function () {
       e.style.fontSize = "20px";
     });
   }
-  if (window.scrollY > 500) {
-    boxes[0].style.right = "0";
-    bTexts[0].style.right = "+24.5vw";
-  }
-  if (window.scrollY > 1100) {
-    boxes[1].style.right = "0";
-    bTexts[1].style.right = "-24.5vw";
-  } else if (window.scrollY < 500) {
-    boxes[0].style.right = "60vw";
-    boxes[1].style.right = "-60vw";
-    bTexts[0].style.right = "-60vw";
-    bTexts[1].style.right = "60vw";
-  }
-});
-
-left_btn.addEventListener("click", function () {
-  pos += 20;
-  if (pos == 60) {
-    pos = 0;
-  }
-  refs.forEach((e) => {
-    e.style.transform = "translateX(" + pos + "vw)";
-  });
-});
-
-right_btn.addEventListener("click", function () {
-  pos -= 20;
-  if (pos == -60) {
-    pos = 0;
-  }
-  refs.forEach((e) => {
-    e.style.transform = "translateX(" + pos + "vw)";
-  });
 });

@@ -6,6 +6,8 @@
   font-family: "Oxygen", sans-serif;
 }
 html {
+  scroll-behavior: smooth;
+  scroll-padding: 5em;
   overflow-x: hidden;
 }
 /* LOADING PAGE */
@@ -84,7 +86,7 @@ nav ul li a:hover {
   z-index: 0;
 }
 .content {
-  transform: translateX(-10vw) ;
+  transform: translateX(-10vw);
   width: 50vw;
   animation: contentAni ease-in-out 4s infinite alternate;
 }
@@ -128,7 +130,7 @@ nav ul li a:hover {
 /* ABOUT US */
 .about-us {
   background-image: url("../assets/carbon_fibre.png");
-  
+
   height: 210vh;
   width: 100vw;
   display: flex;

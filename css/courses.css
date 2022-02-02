@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5em;
+  overflow-x: hidden;
+}
+/* LOADING PAGE */
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  position: fixed;
+  z-index: 3;
+}
+.spinyspin {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  border: 10px solid #bdbdbd;
+  border-top-color: #21c6f0;
+  border-radius: 50%;
+  animation: spinyAni linear 1s infinite;
+}
+@keyframes spinyAni {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+/* NAVIGATION */
+nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff00;
+  z-index: 2;
+  position: fixed;
+  transition: 0.5s;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+  transition: 0.5s;
+}
+nav ul li a {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+nav ul li a:hover {
+  color: #00dbd3;
+}
