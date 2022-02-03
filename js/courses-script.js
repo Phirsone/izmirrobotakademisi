@@ -25,7 +25,7 @@ window.addEventListener("scroll", function () {
       e.style.fontSize = "16px";
     });
   } else {
-    nav.style.backgroundColor = "#ffffff00";
+    nav.style.backgroundColor = "#000";
     nav.style.boxShadow = "0 0px 0px transparent";
     nav.style.height = "10vh";
     navUl.style.width = "50vw";

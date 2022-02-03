@@ -43,7 +43,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff00;
+  background-color: #000000;
   z-index: 2;
   position: fixed;
   transition: 0.5s;
@@ -69,4 +69,8 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #00dbd3;
+}
+/* Content */
+.content{
+  padding-top: 10vh;
 }
