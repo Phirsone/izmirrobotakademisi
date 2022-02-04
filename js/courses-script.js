@@ -1,6 +1,5 @@
 const loader = document.getElementById("loader");
 const nav = document.querySelector("nav");
-const navText = document.querySelectorAll("nav ul li a");
 const navUl = document.getElementById("ul");
 
 setTimeout(() => {
@@ -16,22 +15,16 @@ if (screen.width <= 1400) {
 window.addEventListener("scroll", function () {
   console.log(window.scrollY);
   if (window.scrollY > 50) {
+    nav.classList.add("nav-text-scrolled");
     nav.style.backgroundColor = "#ffffff";
     nav.style.boxShadow = "0 10px 10px #000000";
     nav.style.height = "7vh";
     navUl.style.width = "40vw";
-    navText.forEach((e) => {
-      e.style.color = "#000";
-      e.style.fontSize = "16px";
-    });
   } else {
+    nav.classList.remove("nav-text-scrolled");
     nav.style.backgroundColor = "#000";
     nav.style.boxShadow = "0 0px 0px transparent";
     nav.style.height = "10vh";
     navUl.style.width = "50vw";
-    navText.forEach((e) => {
-      e.style.color = "#fff";
-      e.style.fontSize = "20px";
-    });
   }
 });

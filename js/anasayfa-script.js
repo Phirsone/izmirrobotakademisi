@@ -11,7 +11,7 @@ var pos = 0;
 
 setTimeout(() => {
   loader.style.display = "none";
-}, 2000);
+}, 1500);
 
 if (screen.width <= 1400) {
   document.querySelector("body").innerHTML =
@@ -26,19 +26,13 @@ window.addEventListener("scroll", function () {
     nav.style.boxShadow = "0 10px 10px #000000";
     nav.style.height = "7vh";
     navUl.style.width = "40vw";
-    navText.forEach((e) => {
-      e.style.color = "#000";
-      e.style.fontSize = "16px";
-    });
+    nav.classList.add("nav-text-scrolled");
   } else {
     nav.style.backgroundColor = "#ffffff00";
     nav.style.boxShadow = "0 0px 0px transparent";
     nav.style.height = "10vh";
     navUl.style.width = "50vw";
-    navText.forEach((e) => {
-      e.style.color = "#fff";
-      e.style.fontSize = "20px";
-    });
+    nav.classList.remove("nav-text-scrolled");
   }
   if (window.scrollY > 500) {
     boxes[0].style.right = "0";

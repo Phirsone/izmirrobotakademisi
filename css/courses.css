@@ -10,6 +10,12 @@ html {
   scroll-padding: 5em;
   overflow-x: hidden;
 }
+body {
+  background-color: #dfdfdf;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 /* LOADING PAGE */
 .loader {
   width: 100vw;
@@ -37,6 +43,10 @@ html {
 }
 
 /* NAVIGATION */
+.nav-text-scrolled ul li a{
+  color: #000;
+  font-size: 16px;
+}
 nav {
   width: 100vw;
   height: 10vh;
@@ -71,6 +81,104 @@ nav ul li a:hover {
   color: #00dbd3;
 }
 /* Content */
-.content{
+.content {
   padding-top: 10vh;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 30vh;
+}
+.text ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 20vh;
+  width: 40vw;
+}
+/* Okuloncesi  */
+.okuloncesi {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+}
+.okuloncesi .frame {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 25vw;
+  height: 25vw;
+}
+.okuloncesi img {
+  height: 25vw;
+  position: relative;
+  top: 0;
+  left: -10vw;
+}
+/* Ilkokul */
+.ilk {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: 90vh;
+}
+.ilk .frame {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ilk img {
+  width: 40vw;
+  position: relative;
+  top: -1vw;
+  left: -8vw;
+}
+/* Ortaokul */
+.orta {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+}
+.orta .frame {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 25vw;
+  height: 25vw;
+}
+.orta img {
+  width: 40vw;
+  position: relative;
+  top: -1vw;
+  left: -8vw;
+}
+/* Lise */
+.lise {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: 90vh;
+}
+.lise .frame {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 25vw;
+  height: 25vw;
+}
+.lise img {
+  width: 40vw;
+  position: relative;
+  top: -1vw;
+  left: -8vw;
 }

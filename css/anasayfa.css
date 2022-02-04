@@ -53,6 +53,10 @@ ul {
 a {
   text-decoration: none;
 }
+.nav-text-scrolled ul li a{
+  color: #000;
+  font-size: 20px;
+}
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -129,7 +133,7 @@ nav ul li a:hover {
 }
 /* ABOUT US */
 .about-us {
-  background-image: url("../assets/carbon_fibre.png");
+  background-image: url("../assets/micro_carbon.png");
 
   height: 210vh;
   width: 100vw;
