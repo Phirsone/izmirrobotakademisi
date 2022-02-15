@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.logo img {
+  width: 20vw;
+}
+main {
+  height: 100vh;
+  background: linear-gradient(0deg, #268006 10%, #50c028 50%, #268006 90%);
+}
+nav {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.contentHeader {
+  text-align: center;
+  height: 65vh;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+main h1 {
+  color: #e4e4e4;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+main h2 {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+main p {
+  color: #fff;
+}
+main button {
+  width: 90vw;
+  padding: 1em 0;
+  background: linear-gradient(0deg, #ff9019 30%, #e98f30 50%);
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.menu-btn {
+  height: 1.5px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 2px;
+  position: relative;
+}
+.menu-btn::before {
+  content: "";
+  height: 1.5px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 2px;
+  position: absolute;
+  top: 6px;
+}
+.menu-btn::after {
+  content: "";
+  height: 1.5px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 2px;
+  position: absolute;
+  top: -6px;
+}
+.tools-background {
+  background: url("../assets/double-bubble-outline.png");
+}
+.tools {
+  position: relative;
+  top: -10vh;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px #000;
+  width: 80vw;
+  padding: 1.5rem 0;
+  margin: 0 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.tools h1 {
+  color: #ff6600;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.tool-images {
+  text-align: center;
+}
+.frame {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 60vw;
+  min-height: 15vh;
+  max-height: 30vh;
+}
+.tool-images img {
+  max-width: 60vw;
+  max-height: 30vh;
+}
