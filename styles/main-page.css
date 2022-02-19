@@ -18,7 +18,7 @@ body{
 }
 main {
 	height: 80vh;
-	background: linear-gradient(120deg, rgba(40,191,168,1) 0%, rgba(38,159,186,1) 51%, rgba(38,103,184,1) 100%);
+	background: linear-gradient(120deg, rgba(40,191,168,1) 0%, rgba(38,159,186,1) 50%, rgba(38,103,184,1) 100%);
 }
 nav {
 	background-color: #ffffff;
@@ -270,6 +270,10 @@ main button {
 	margin-bottom: 5vh;
 	font-weight: 600;
 	font-size: 1.1em;
+}
+.course-card button:hover{
+	color: #fff;
+	background-color: #20dd20;
 }
 footer{
 	height: 30vh;
