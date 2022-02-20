@@ -223,7 +223,7 @@ main button {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-shadow: 1px 1px 5px #000000;
-	background-color: rgba(0,0,0,0.08);
+	background-color: rgba(0,0,0,0.05);
 }
 .course-img-frame{
 	height: 20vh;
